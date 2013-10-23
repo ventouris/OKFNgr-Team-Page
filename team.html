@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        .okfn-team {
+    overflow:hidden;
+}
+
+.okfn-bio {
+    width: 90%;
+    overflow:hidden;
+}
+
+#team1,#team2,#team3,#team4,#team5 {
+    display:inline;
+    font-size:16px;
+    cursor:pointer;
+    padding:25px;   
+    font-weight: bold;
+}
+
+#thumbnails img {
+    width: 100%;
+    -webkit-border-radius:600px;
+    border-radius:600px
+}
+
+#thumbnails div {
+    cursor:pointer;
+    float:left;
+    margin:8px 16px 8px 0;
+    -webkit-box-shadow:0 0 2px 0 #ccc;
+    box-shadow:0 0 2px 0 #ccc;
+    width:80px;
+    height:80px;
+    -webkit-border-radius:600px;
+    border-radius:600px;
+    background-position:center center;
+    -webkit-background-size:100% auto;
+    -moz-background-size:100% auto;
+    background-size:100% auto;
+    background-repeat:no-repeat;
+    display:block;
+}
+
+#team1:hover ~ #thumbnails > #thumbnail2,
+#team1:hover ~ #thumbnails > #thumbnail3,
+#team1:hover ~ #thumbnails > #thumbnail4,
+#team1:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team2:hover ~ #thumbnails > #thumbnail1,
+#team2:hover ~ #thumbnails > #thumbnail3,
+#team2:hover ~ #thumbnails > #thumbnail4,
+#team2:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team3:hover ~ #thumbnails > #thumbnail1,
+#team3:hover ~ #thumbnails > #thumbnail2,
+#team3:hover ~ #thumbnails > #thumbnail4,
+#team3:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team4:hover ~ #thumbnails > #thumbnail1,
+#team4:hover ~ #thumbnails > #thumbnail2,
+#team4:hover ~ #thumbnails > #thumbnail3,
+#team4:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team5:hover ~ #thumbnails > #thumbnail1,
+#team5:hover ~ #thumbnails > #thumbnail2,
+#team5:hover ~ #thumbnails > #thumbnail3,
+#team5:hover ~ #thumbnails > #thumbnail4{
+    opacity:0.1;
+}
+
+
+.member {
+    background: url(../img/member-separator.png) 180px center no-repeat;
+    padding: 0 40px 26px 242px;
+    position: relative;
+    min-height: 128px;
+ 
+}
+
+.member .member-avatar {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    margin-top: -64px;
+    width: 128px;
+    height: 128px;
+    background: #fff;
+    padding: 4px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-transition: background .1s ease-in;
+    -moz-transition: background .1s ease-in;
+    -ms-transition: background .1s ease-in;
+    -o-transition: background .1s ease-in;
+    transition: background .1s ease-in;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,.3);
+    -o-box-shadow: 0 0 6px rgba(0,0,0,.3);
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+
+.member .member-avatar img {
+    height: 128px;
+    width: 128px;
+    -webkit-border-radius: 128px;
+    -moz-border-radius: 128px;
+    border-radius: 128px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.member:hover .member-avatar {
+    background: #1a988b;
+    padding: 10px;
+    left: 24px;
+    margin-top: -70px;
+}
+
+.member .member-name {
+    margin: 0;
+    color: #1a988b;
+}
+
+.member .member-position {
+    color: #aaa;
+    margin: 0 0 10px 0;
+}
+
+.member .member-bio {
+    font-size: .9em;
+    color: #666;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+        <!-- thumbnail1:Administrative Council, thumbnail2:Project Coordinator, thumbnail3: Community Coordinator, thumbnail4: Developers,thumbnail5:Designers  -->
+        <div class="okfn-team">
+            <div id="team1">Administrative Council</div>
+            <div id="team2">Project Coordinator</div>
+            <div id="team3">Community Coordinator</div>
+            <div id="team4">Developer</div>
+            <div id="team5">Designer</div>
+
+            <div id="thumbnails">
+                <div id="thumbnail1">
+                    <a href="#okfn-bratsas">
+                        <img title="Χαράλαμπος Μπράτσας" src="./img/cbratsas.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-antoniou">
+                        <img title="Ιωάννης Αντωνίου" src="./img/antoniou.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-bamidis">
+                        <img title="Παναγιώτης Μπαμίδης" src="./img/bamidis.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-zigiaris">
+                        <img title="Σωτήρης Ζυγιάρης" src="./img/zigiaris.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-mitakidis">
+                        <img title="Γεώργιος Μητακίδης" src="./img/mitakidis.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-spirakis">
+                        <img title="Παύλος Σπυράκης" src="./img/spirakis.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-veskoukis">
+                        <img title="Βασίλειος Βεσκούκης" src="./img/veskoukis.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-mpapadopoulos">
+                        <img title="Μαρίνος Παπαδόπουλος" src="./img/mpapadopoulos.png">
+                    </a>
+                </div>
+                <div id="thumbnail1">
+                    <a href="#okfn-martzopoulou">
+                        <img title="Αναστασία Μαρτζοπούλου" src="./img/default_user.png">
+                    </a>
+                </div>
+                <div id="thumbnail2">
+                    <a href="#okfn-ventouris">
+                        <img title="Αναστάσιος Βεντούρης" src="./img/ventouris.png">
+                    </a>
+                </div>
+                <div id="thumbnail3">
+                    <a href="#okfn-liouta">
+                        <img title="Ζωή Λιούτα" src="./img/liouta.png">
+                    </a>
+                </div>
+                <div id="thumbnail3">
+                    <a href="#okfn-papageorgiou">
+                        <img title="Μυρτώ Παπαγεωργίου" src="./img/papageorgiou.png">
+                    </a>
+                </div>
+                <div id="thumbnail2">
+                    <a href="#okfn-karampatakis">
+                        <img title="Σωτήρης Καραμπατάκης" src="./img/karampatakis.png">
+                    </a>
+                </div>
+                <div id="thumbnail3">
+                    <a href="#okfn-samothrakitou">
+                        <img title="Ζαχαρούλα Σαμοθρακίτου" src="./img/samothrakitou.png">
+                    </a>
+                </div>
+                <div id="thumbnail4">
+                    <a href="#okfn-xionia">
+                        <img title="Χιονία Γεωργιλά" src="./img/xionia.png">
+                    </a>
+                </div>
+                <div id="thumbnail3">
+                    <a href="#okfn-koupidis">
+                        <img title="Κλεάνθης Κουπίδης" src="./img/koupidis.png">
+                    </a>
+                </div>
+                <div id="thumbnail4">
+                    <a href="#okfn-lioannidis">
+                        <img title="Λάζαρος Ιωαννίδης" src="./img/default_user.png">
+                    </a>
+                </div>
+                <div id="thumbnail3">
+                    <a href="#okfn-sxoina">
+                        <img title="Μαρία Σχοινά" src="./img/sxoina.png">
+                    </a>
+                </div>
+                <div id="thumbnail3">
+                    <a href="#okfn-passas">
+                        <img title="Ισίδωρος Πάσσας" src="./img/default_user.png">
+                    </a>
+                </div>
+                <div id="thumbnail2">
+                    <a href="#okfn-mpamparopoulos">
+                        <img title="Γιώργος Μπαμπαρόπουλος" src="./img/default_user.png">
+                    </a>
+                </div>
+                <div id="thumbnail2">
+                    <a href="#okfn-sidiropoulos">
+                        <img title="Στάθης Σιδιρόπουλος" src="./img/default_user.png">
+                    </a>
+                </div>
+                <div id="thumbnail5">
+                    <a href="#okfn-aggelou">
+                        <img title="Αγάπη Αγγέλου" src="./img/default_user.png">
+                    </a>
+                </div>
+                <div id="thumbnail4">
+                    <a href="#okfn-alexiou">
+                        <img title="Σπύρος Αλεξίου" src="./img/default_user.png">
+                    </a>
+                </div>
+                <div id="thumbnail4">
+                    <a href="#okfn-xamalidis">
+                        <img title="Αθανάσιος Χαμαλίδης" src="./img/xamalidis.png">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    <br>
+    <hr>
+    <div class="okfn-bio">
+        <div class="member" id="okfn-bratsas">
+            <h3 class="member-name">Χαράλαμπος Μπράτσας</h3>
+            <h4 class="member-position">Administrative Council &  CEO</h4>
+            <p>
+                <a target='_blank' href="http://gr.linkedin.com/pub/charalampos-bratsas/9/52/787"><img src="./img/social/linkedin.png"></a>
+                <a target='_blank' href="https://twitter.com/Bratsas"><img src="./img/social/twitter.png"></a>
+            </p>
+            <p class="member-bio">
+                Ο Δρ Χαράλαμπος Μπράτσας είναι ο ιδρυτής του Ελληνικού παραρτήματος του Open Knowledge Foundation και πρόεδρος του Δ.Σ. Διδάσκει στο MSc της Επιστήμης του Διαδικτύου στο ΑΠΘ και συμμετέχει ως ερευνητής στο εργαστήριο Ιατρικής Πληροφορικής. Κύριοι τομείς ενδιαφέροντός του είναι τα Open Data (Δημιουργός και συντονιστής του Ελληνικού Opan Data Hub), Semantic Web, Social Semantic Web, Linked Data (Συντονιστής της Ελληνικής DBpedia), Data Mining, Big Data και εφαρμογές της Τεχνητής Νοημοσύνης. Είναι επίσης, μεταδιδακτορικός επιστημονικός συνεργάτης στο εργαστήριο Complex Systems Analysis στο τμήμα Μαθηματικών του ΑΠΘ. Κατέχει Πτυχίο Μαθηματικών (1999), μεταπτυχιακό τίτλο σπουδών στην Ιατρική Πληροφορίκη (2001) και διδακτορικό δίπλωμα στην Informatics in Medical Education (2008). Έχει συμμετάσχει σε διάφορα προγράμματα της Ευρωπαϊκής Ένωσης.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/cbratsas.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-antoniou">
+            <h3 class="member-name">Ιωάννης Αντωνίου</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/antoniou.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-bamidis">
+            <h3 class="member-name">Παναγιώτης Μπαμίδης</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/bamidis.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-zigiaris">
+            <h3 class="member-name">Σωτήρης Ζυγιάρης</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/zigiaris.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-mitakidis">
+            <h3 class="member-name">Γεώργιος Μητακίδης</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/mitakidis.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-spirakis">
+            <h3 class="member-name">Παύλος Σπυράκης</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/spirakis.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-veskoukis">
+            <h3 class="member-name">Βασίλειος Βεσκούκης</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Ο Βεσκούκης, Βασίλειος συν-ιδρυτής του Ελληνικού παραρτήματος του Open Knowledge Foundation και μέλος του ΔΣ, είναι Διπλωματούχος Ηλεκτρολόγος Μηχανικός και Μηχανικός Υπολογιστών ΕΜΠ (1991), και Διδάκτωρ Μηχανικός ΕΜΠ (1996). Από το 1987 εργάζεται στο χώρο της πληροφορικής, με αντικείμενα την ανάπτυξη πληροφοριακών συστημάτων, τη διασφάλιση ποιότητας, την ηλεκτρονική εκπαίδευση και διακυβέρνηση, καθώς και τη διαχείριση περιβαλλοντικών κρίσεων. Από το 2006 είναι Επίκουρος Καθηγητής στο Εθνικό Μετσόβιο Πολυτεχνείο. Τα ερευνητικά του ενδιαφέροντα εστιάζονται στα πληροφοριακά συστήματα με έμφαση στην ολοκλήρωση ετερογενών κατανεμημένων συστημάτων για διαχείριση κινδύνων και επιχειρησιακό σχεδιασμό, στη βελτιστοποίηση χωρικά κατανεμημένων δικτυακών συστημάτων και υπηρεσιών, καθώς και στη δυναμική συμπεριφορά σημασιολογικών δικτύων.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/veskoukis.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-mpapadopoulos">
+            <h3 class="member-name">Μαρίνος Παπαδόπουλος</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Ο Μαρίνος Παπαδόπουλος, δικηγόρος εγγεγραμμένος στο Δικηγορικό Σύλλογο Αθηνών από το 1996, είναι υποψήφιος διδάκτορας στη Νομική Σχολή του Πανεπιστημίου Αθηνών στο γνωστικό αντικείμενο της πνευματικής ιδιοκτησίας στο διαδίκτυο με θέμα περί την Ανοικτότητα (Openness). Είναι πτυχιούχος της Νομικής Σχολής του Πανεπιστημίου Αθηνών και κάτοχος μεταπτυχιακού τίτλου Master of Science στο αντικείμενο της Εταιρικής Επικοινωνίας—Δημόσιες Σχέσεις Επιχειρήσεων του πανεπιστημίου Boston University. Έχει, επίσης, μεταπτυχιακές σπουδές στα πανεπιστήμια Harvard University, Stanford University σε θέματα Νομικής Πληροφορικής, και George Washington University σε αντικείμενα Management. Έχει συμμετοχή σε διεθνή fora με αντικείμενο θέματα Νομικής Πληροφορικής (Πληροφορικής Τεχνολογίας και Νομικής Επιστήμης), Κοινωνίας της Πληροφορίας και Ψηφιακής Στρατηγικής. Υπήρξε επικεφαλής νομικός (Legal Lead) δημιουργός των αδειών Creative Commons στην Ελλάδα, και είναι ιδρυτικό μέλος του Ιδρύματος Ανοικτής Γνώσης Ελλάδας (Open Knowledge Foundation Greece). Έχει πλούσια εμπειρία ως ειδικός επιστημονικός και νομικός σύμβουλος σε έργα καινοτομίας χρηματοδοτούμενα από την Ευρωπαϊκή Επιτροπή υλοποιούμενα στην Ελλάδα και το εξωτερικό. Το συγγραφικό του έργο περιλαμβάνει πληθώρα επιστημονικών άρθρων και δημοσιεύσεις σε πανεπιστημιακές και επιστημονικές εκδόσεις Ελλάδας, ΗΠΑ, Μεγάλης Βρεττανίας, και Ινδίας.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/mpapadopoulos.png" />
+            </div>
+        </div>
+
+        <div class="member">
+            <h3 class="member-name">Αναστασία Μαρτζοπούλου</h3>
+            <h4 class="member-position">Administrative Council</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/default_user.png" />
+            </div>
+        </div>
+
+        <div class="member" id="okfn-ventouris">
+            <h3 class="member-name">Αναστάσιος Βεντούρης</h3>
+            <h4 class="member-position">Chief Operating Officer (COO)</h4>
+            <p>
+                <a target='_blank' href="http://gr.linkedin.com/in/ventourisanastasios"><img src="./img/social/linkedin.png"></a>
+                <a target='_blank' href="http://www.twitter.com/TasosVentouris"><img src="./img/social/twitter.png"></a>
+                <a target='_blank' href="http://about.me/ventouris"><img src="./img/social/aboutme.png"></a>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/ventouris.png" />
+            </div>
+        </div>
+        <div class="member" id="okfn-liouta">
+            <h3 class="member-name">Ζωή Λιούτα</h3>
+            <h4 class="member-position">Community & Event Manager</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Η Λιούτα Ζωή είναι ενεργό μέλος του Ελληνικού Παραρτήματος του Open Knowledge Foundation, community manager, event coordinator και leader of Data expedition του OKFN Greece. Ακόμη, είναι πρόεδρος του Συλλόγου Βλάχων Φοιτητών Θεσσαλονίκης. Επίσης, είναι ενεργό μέλος της Ελληνικής Μαθηματικής Εταιρίας. Όσον αφορά της σπουδές της είναι μεταπτυχιακή φοιτήτρια στο τμήμα της Επιστήμης του Διαδικτύου του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης (Α.Π.Θ.) και πτυχιούχος του τμήματος Μαθηματικών του Α.Π.Θ.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/liouta.png" />
+            </div>
+        </div>
+        <div class="member" id="okfn-papageorgiou">
+            <h3 class="member-name">Μυρτώ Παπαγεωργίου</h3>
+            <h4 class="member-position">Community Manager</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Η Παπαγεωργίου Μυρτώ είναι ενεργό μέλος του Ελληνικού παραρτήματος του Open Knowledge Foundation και OKFN Greece Chapter Community Manager. Είναι πτυχιούχος του τμήματος Μαθηματικών του ΑΠΘ και μεταπτυχιακή φοιτήτρια στο τμήμα της Επιστήμης του Διαδικτύου του ΑΠΘ (web science). Είναι ενεργό μέλος της Μαθηματικής Εταιρείας και ασχολείται με την εκπαίδευση και τη διδασκαλία των μαθηματικών.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/papageorgiou.png" />
+            </div>
+        </div>
+        <div class="member" id="okfn-karampatakis">
+            <h3 class="member-name">Σωτήρης Καραμπατάκης</h3>
+            <h4 class="member-position">Open GLAM</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Ο Σωτήρης είναι από τη Νάουσα. Σπούδασε Φυσική στο Πανεπιστήμιο Κρήτης και τελειώνει το μεταπτυχιακό του στο Α.Π.Θ. στο τμήμα Web Science. Μοιράζει το χρόνο του ανάμεσα στο να διδάσκει Φυσική και να γράφει κώδικα, τις δύο μεγάλες αγάπες του! Τα πιο πρόσφατα Project που έχει αναλάβει αφορούν τη δημοσιοποίηση βιβλιογραφικών δεδομένων σύμφωνα με τις Αρχές των Linked Data, όπως τα βιβλιογραφικά δεδομένα της Δημόσιας Βιβλιοθήκης της Βέροιας και το αρχείο Καθιερωμένων Όρων της Εθνικής Βιβλιοθήκης της Ελλάδος. Του αρέσουν τα ταξίδια και οτιδήποτε του ανεβάζει την αδρεναλίνη.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/karampatakis.png" />
+            </div>
+        </div>
+    <div class="member" id="okfn-samothrakitou">
+            <h3 class="member-name">Ζαχαρούλα Σαμοθρακίτου</h3>
+            <h4 class="member-position">Social Media Manager & Open GLAM & School of Data</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Ονομάζομαι Ζαχαρούλα Σαμοθρακίτου, είμαι 25 ετών και γεννήθηκα στη Θεσσαλονίκη, όπου και διαμένω. Είμαι απόφοιτος του τμήματος Βιβλιοθηκονομίας και Συστημάτων Πληροφόρησης στο ΑΤΕΙΘ και το μεταπτυχιακό μου σχετίζεται με την Ηλεκτρονική Μάθηση ή όπως είναι ευρέως διαδεδομένο με το e-Learning. Το μεταπτυχιακό που έχω παρακολουθήσει διατίθεται στο Τμήμα Ψηφιακών Συστημάτων του Πανεπιστημίου Πειραιώς. Η εργασιακή μου εμπειρία που σχετίζεται με τις σπουδές μου επικεντρώνεται στη θέση της βιβλιοθηκονόμου στη Δημοτική Βιβλιοθήκη του Ευόσμου Θεσσαλονίκης. Ωστόσο, ο τομέας που έχω επικεντρωθεί αφορά τις Ψηφιακές Βιβλιοθήκες, τα Μεταδεδομένα και τα Ανοιχτά Διασυνδεδεμένα δεδομένα σε αυτές.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/samothrakitou.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-xionia">
+            <h3 class="member-name">Χιονία Γεωργιλά</h3>
+            <h4 class="member-position">Developer</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Μηχανικός Η/Υ και Πληροφορικής , απόφοιτος του Πολυτεχνείου Πάτρας και φοιτήτρια στο Μεταπτυχιακό Πρόγραμμα «Web Science» του Μαθηματικού τμήματος του Αριστοτελείου Πανεπιστημίου. Από το 2001 έως σήμερα εργάζεται ως καθηγήτρια μέσης εκπαίδευσης στο Επαγγελματικό Λύκειο Βασιλικών. Με ομάδες μαθητών έχει κατακτήσει 3 εθνικά και 1 πανευρωπαϊκό βραβείο σε μαθητικούς διαγωνισμούς. Το Μάρτιο του 2010, βραβεύτηκε από το Υπουργείο Παιδείας στα πλαίσια του Θεσμού «Αριστεία και Καινοτομία στην Εκπαίδευση».  Από το 1990 έως το 2001 εργάστηκε στην εταιρία Ιντρασόφτ. Από το 1990 έως το 1994 εργάστηκε ως ειδικός εφαρμογών υποστηρίζοντας τη μηχανογραφημένη διεξαγωγή των τυχερών παιχνιδιών του ΟΠΑΠ. Επίσης, εργάστηκε παρέχοντας τις αντίστοιχες  υπηρεσίες υποστήριξης στην Κύπρο, στη Ρωσία και τη Ν. Αφρική. Τέλος κατά τα έτη 1994 έως 2001, ήταν μέλος της ομάδας Ευρωπαϊκών Ερευνητικών Προγραμμάτων της Ιντρασόφτ Θεσσαλονίκης συμμετέχοντας στην υλοποίηση και διαχείριση ερευνητικών έργων.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/xionia.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-koupidis">
+            <h3 class="member-name">Κλεάνθης Κουπίδης</h3>
+            <h4 class="member-position">Director of Policy and Ideas</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Ο Κλεάνθης Κουπίδης αποφοίτησε από το Τμήμα Μαθηματικών του Α.Π.Θ., ενώ έλαβε από το ίδιο τμήμα το M.Sc. στην Επιστήμη του Διαδικτύου(Web science). Επίσης ασχολείται με τη μουσική ως τραγουδοποιός και ερμηνευτής.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/koupidis.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-lioannidis">
+            <h3 class="member-name">Λάζαρος Ιωαννίδης</h3>
+            <h4 class="member-position">Developer</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/default_user.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-sxoina">
+            <h3 class="member-name">Μαρία Σχοινά</h3>
+            <h4 class="member-position">Εvent Coordinator</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                H Μαρία Σ. Σχοινά, είναι διπλωματούχος Πολιτικός Μηχανικός του Αριστοτελείου Πανεπιστημίου Θεσ/νίκης. Τα πρώτα χρόνια από την κτήση του διπλώματος ασχολήθηκε με εκπόνηση στατικών μελετών και έκδοση οικοδομικών αδειών συνεργαζόμενη με τεχνική – κατασκευαστική εταιρεία. Από το 2000 απασχολείται στην Ερευνητική Μονάδα Urenio του Α.Π.Θ. ως μέλος της μονάδας διαχείρισης και υλοποίησης Εθνικών κι Ευρωπαϊκών ερευνητικών/αναπτυξιακών προγραμμάτων στους τομείς της Καινοτομίας, της Περιφερειακής Ανάπτυξης, Διαχείρισης Τεχνολογίας και Επιχειρηματικής Ευφυίας. Στην ενασχόλησή της με το OKFΝ GR περιλαμβάνεται ο συντονισμός και διοργάνωση των εκδηλώσεων και συναντήσεων.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/sxoina.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-passas">
+            <h3 class="member-name">Ισίδωρος Πάσσας</h3>
+            <h4 class="member-position">Blog Editor</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/default_user.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-mpamparopoulos">
+            <h3 class="member-name">Γιώργος Μπαμπαρόπουλος</h3>
+            <h4 class="member-position">School of Data</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/default_user.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-sidiropoulos">
+            <h3 class="member-name">Στάθης Σιδιρόπουλος</h3>
+            <h4 class="member-position">School of Data & Open Journalism</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/default_user.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-aggelou">
+            <h3 class="member-name">Αγάπη Αγγέλου</h3>
+            <h4 class="member-position">Open Spending & Designer</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/default_user.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-alexiou">
+            <h3 class="member-name">Σπύρος Αλεξίου</h3>
+            <h4 class="member-position">Open Spending & Mobile Developer</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/default_user.png" />
+            </div>
+    </div>
+    <div class="member" id="okfn-xamalidis">
+            <h3 class="member-name">Αθανάσιος Χαμαλίδης</h3>
+            <h4 class="member-position">CKAN Developer</h4>
+            <p>
+            </p>
+            <p class="member-bio">
+                Ο Χαμαλίδης Αθανάσιος αποφοίτησε απο το τμήμα Ηλετρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Πολυτεχνείου Θεσσαλονίκης όπου ασχολήθηκε με την επεξεργασία βιοιατρικών σημάτων. Αυτή τη στιγμή φοιτεί στο μεταπτυχιακό πρόγραμμα σπουδών "Επιστήμη Διαδικτύου του τμήματος Μαθηματικών Θεσσαλονίκης. Έχει κάνει πρακτική άσκηση στη Μονάδα Σημασιολογικού Ιστού του Αριστοτελείου πανεπιστημίου Θεσσαλονίκης όπου ασχολήθηκε με τεχνολογίες σημασιολογικών και ανοικτών δεδομένων. Είναι μέλος του OKF Greece Chapter όπου είναι γενικός υπεύθυνος και προγραμματιστής της πλατφόρμας CKAN.
+            </p>
+            <div class="member-avatar">
+                <img alt="" src="./img/xamalidis.png" />
+            </div>
+    </div>
+</div>
+
+</body>
+</html>

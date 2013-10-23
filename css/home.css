@@ -1,0 +1,141 @@
+.okfn-team {
+	overflow:hidden;
+}
+
+.okfn-bio {
+    width: 90%;
+    overflow:hidden;
+}
+
+#team1,#team2,#team3,#team4,#team5 {
+	display:inline;
+	font-size:16px;
+	cursor:pointer;
+	padding:25px;	
+    font-weight: bold;
+}
+
+#thumbnails img {
+	width: 100%;
+	-webkit-border-radius:600px;
+	border-radius:600px
+}
+
+#thumbnails div {
+	cursor:pointer;
+	float:left;
+	margin:8px 16px 8px 0;
+	-webkit-box-shadow:0 0 2px 0 #ccc;
+	box-shadow:0 0 2px 0 #ccc;
+	width:80px;
+	height:80px;
+	-webkit-border-radius:600px;
+	border-radius:600px;
+	background-position:center center;
+	-webkit-background-size:100% auto;
+	-moz-background-size:100% auto;
+	background-size:100% auto;
+	background-repeat:no-repeat;
+	display:block;
+}
+
+#team1:hover ~ #thumbnails > #thumbnail2,
+#team1:hover ~ #thumbnails > #thumbnail3,
+#team1:hover ~ #thumbnails > #thumbnail4,
+#team1:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team2:hover ~ #thumbnails > #thumbnail1,
+#team2:hover ~ #thumbnails > #thumbnail3,
+#team2:hover ~ #thumbnails > #thumbnail4,
+#team2:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team3:hover ~ #thumbnails > #thumbnail1,
+#team3:hover ~ #thumbnails > #thumbnail2,
+#team3:hover ~ #thumbnails > #thumbnail4,
+#team3:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team4:hover ~ #thumbnails > #thumbnail1,
+#team4:hover ~ #thumbnails > #thumbnail2,
+#team4:hover ~ #thumbnails > #thumbnail3,
+#team4:hover ~ #thumbnails > #thumbnail5{
+    opacity:0.1;
+}
+#team5:hover ~ #thumbnails > #thumbnail1,
+#team5:hover ~ #thumbnails > #thumbnail2,
+#team5:hover ~ #thumbnails > #thumbnail3,
+#team5:hover ~ #thumbnails > #thumbnail4{
+    opacity:0.1;
+}
+
+
+.member {
+    background: url(../img/member-separator.png) 180px center no-repeat;
+    padding: 0 40px 26px 242px;
+    position: relative;
+    min-height: 128px;
+ 
+}
+
+.member .member-avatar {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    margin-top: -64px;
+    width: 128px;
+    height: 128px;
+    background: #fff;
+    padding: 4px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-transition: background .1s ease-in;
+    -moz-transition: background .1s ease-in;
+    -ms-transition: background .1s ease-in;
+    -o-transition: background .1s ease-in;
+    transition: background .1s ease-in;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,.3);
+    -o-box-shadow: 0 0 6px rgba(0,0,0,.3);
+    box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+
+.member .member-avatar img {
+    height: 128px;
+    width: 128px;
+    -webkit-border-radius: 128px;
+    -moz-border-radius: 128px;
+    border-radius: 128px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
+.member:hover .member-avatar {
+    background: #1a988b;
+    padding: 10px;
+    left: 24px;
+    margin-top: -70px;
+}
+
+.member .member-name {
+    margin: 0;
+    color: #1a988b;
+}
+
+.member .member-position {
+    color: #aaa;
+    margin: 0 0 10px 0;
+}
+
+.member .member-bio {
+    font-size: .9em;
+    color: #666;
+}
+
